@@ -22,7 +22,7 @@ function UserList() {
   const handleBlockAccount = async (id) => {
     try {
       const response = await axios.post(
-        `https://share-wave.vercel.app/user/blockUser/${id}`,
+        `https://sharewave.vercel.app/user/blockUser/${id}`,
         {},
         {
           headers: {

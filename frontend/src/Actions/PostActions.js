@@ -47,7 +47,7 @@ export const fetchAllPosts = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "https://share-wave.vercel.app/post/allPosts",
+      "https://sharewave.vercel.app/post/allPosts",
       config
     );
 
@@ -73,7 +73,7 @@ export const fetchAdminPosts = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/post/postsAdmin`,
+      `https://sharewave.vercel.app/post/postsAdmin`,
       config
     );
 
@@ -99,7 +99,7 @@ export const fetchUSERPosts = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/post/userPosts/${id}`,
+      `https://sharewave.vercel.app/post/userPosts/${id}`,
       config
     );
 
@@ -125,7 +125,7 @@ export const likePosts = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/post/${id}/like`,
+      `https://sharewave.vercel.app/post/${id}/like`,
       config
     );
 
@@ -149,7 +149,7 @@ export const postComment = (postId, comment) => async (dispatch) => {
       withCredentials: true,
     };
     const { data } = await axios.post(
-      `https://share-wave.vercel.app/post/postComment/${postId}`,
+      `https://sharewave.vercel.app/post/postComment/${postId}`,
       { comment },
       config
     );
@@ -177,7 +177,7 @@ export const fetchMyPosts = () => async (dispatch) => {
       withCredentials: true,
     };
     const { data } = await axios.get(
-      "https://share-wave.vercel.app/post/myPosts",
+      "https://sharewave.vercel.app/post/myPosts",
       config
     );
 
@@ -203,7 +203,7 @@ export const createNewPost =
       };
 
       const { data } = await axios.post(
-        `https://share-wave.vercel.app/post/upload`,
+        `https://sharewave.vercel.app/post/upload`,
         {
           caption,
           image,
@@ -237,7 +237,7 @@ export const updatePost =
       };
 
       const { data } = await axios.put(
-        `https://share-wave.vercel.app/post/update/${id}`,
+        `https://sharewave.vercel.app/post/update/${id}`,
         { caption, tags, feeling, location },
         config
       );
@@ -265,7 +265,7 @@ export const deletePost = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `https://share-wave.vercel.app/post/${id}/delete`,
+      `https://sharewave.vercel.app/post/${id}/delete`,
       config
     );
 
@@ -291,7 +291,7 @@ export const createNewStory = (content, image) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://share-wave.vercel.app/story/create",
+      "https://sharewave.vercel.app/story/create",
       {
         content,
         image,
@@ -320,7 +320,7 @@ export const fetchStoryPosts = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "https://share-wave.vercel.app/story/all",
+      "https://sharewave.vercel.app/story/all",
       config
     );
 

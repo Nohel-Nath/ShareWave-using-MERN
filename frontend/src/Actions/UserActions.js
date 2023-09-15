@@ -61,7 +61,7 @@ export const loginUser = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `https://share-wave.vercel.app/user/login`,
+      `https://sharewave.vercel.app/user/login`,
       { email, password },
       config
     );
@@ -92,7 +92,7 @@ export const registerAUser =
       };
 
       const { data } = await axios.post(
-        `https://share-wave.vercel.app/user/registration`,
+        `https://sharewave.vercel.app/user/registration`,
         { name, email, password, website, avatar },
         config
       );
@@ -122,7 +122,7 @@ export const getUserDetails = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/profile`,
+      `https://sharewave.vercel.app/user/profile`,
       config
     );
 
@@ -145,7 +145,7 @@ export const allUserDetails = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/usersAll`,
+      `https://sharewave.vercel.app/user/usersAll`,
       config
     );
 
@@ -168,7 +168,7 @@ export const adminUserDetails = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/allUsers`,
+      `https://sharewave.vercel.app/user/allUsers`,
       config
     );
 
@@ -190,7 +190,7 @@ export const searchAction = (tags, name) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/post/search?tags=${tags || ""}&name=${
+      `https://sharewave.vercel.app/post/search?tags=${tags || ""}&name=${
         name || ""
       }`,
       config
@@ -213,7 +213,7 @@ export const logout = () => async (dispatch) => {
       withCredentials: true,
     };
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/logout`,
+      `https://sharewave.vercel.app/user/logout`,
       config
     );
     const token = data.token;
@@ -238,7 +238,7 @@ export const updateProfile =
       };
 
       const { data } = await axios.put(
-        `https://share-wave.vercel.app/user/profileUpdate`,
+        `https://sharewave.vercel.app/user/profileUpdate`,
         { name, email, website, avatar },
         config
       );
@@ -264,7 +264,7 @@ export const updatePassword =
       };
 
       const { data } = await axios.put(
-        `https://share-wave.vercel.app/user/passwordUpdate`,
+        `https://sharewave.vercel.app/user/passwordUpdate`,
         { oldPassword, newPassword },
         config
       );
@@ -288,7 +288,7 @@ export const fetchUSERProfile = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/userProfile/${id}`,
+      `https://sharewave.vercel.app/user/userProfile/${id}`,
       config
     );
 
@@ -314,7 +314,7 @@ export const followUser = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/follow/${id}`,
+      `https://sharewave.vercel.app/user/follow/${id}`,
       config
     );
 
@@ -340,7 +340,7 @@ export const blockList = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/blockList`,
+      `https://sharewave.vercel.app/user/blockList`,
       config
     );
 
@@ -363,7 +363,7 @@ export const getBlockUsers = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/blockByAdmin`,
+      `https://sharewave.vercel.app/user/blockByAdmin`,
       config
     );
 
@@ -388,7 +388,7 @@ export const getUserDetailsAdmin = (userId) => async (dispatch) => {
       withCredentials: true,
     };
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/user/details/${userId}`,
+      `https://sharewave.vercel.app/user/details/${userId}`,
       config
     );
 
@@ -411,7 +411,7 @@ export const updateUser = (id, userData) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `https://share-wave.vercel.app/user/updateRole/${id}`,
+      `https://sharewave.vercel.app/user/updateRole/${id}`,
       userData,
       config
     );
@@ -435,7 +435,7 @@ export const allNotificationDetails = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `https://share-wave.vercel.app/notification/all`,
+      `https://sharewave.vercel.app/notification/all`,
       config
     );
 

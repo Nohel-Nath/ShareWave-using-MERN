@@ -3,7 +3,7 @@
 
 This is a Social Media Blog Web Application built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides a platform for users to create and share posts, stories, follow/unfollow other users, and interact with each other through likes, comments, and notifications. Additionally, it includes an admin panel to manage users, posts, and stories.
 
-## Live-Link: https://share-wave.vercel.app/
+## Live-Link: https://sharewave.vercel.app/
 
 
 ## Features

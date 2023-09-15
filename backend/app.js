@@ -19,7 +19,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(fileUpload());
 const corsOptions = {
-  origin: "https://share-wave.vercel.app/",
+  origin: "https://sharewave.vercel.app/",
   methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true,
   optionSuccessStatus: 200,

@@ -117,7 +117,7 @@ function UserProfile() {
   const handleBlockUser = async (id) => {
     try {
       const response = await axios.post(
-        `https://share-wave.vercel.app/user/block/${id}`,
+        `https://sharewave.vercel.app/user/block/${id}`,
         {},
         {
           headers: {
