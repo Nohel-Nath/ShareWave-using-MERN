@@ -23,7 +23,7 @@ function BlockList() {
   const handleUnblockAccount = async (id) => {
     try {
       const response = await axios.post(
-        `https://sharewave.vercel.app/user/unblockUser/${id}`,
+        `https://share-wave.vercel.app/user/unblockUser/${id}`,
         {},
         {
           headers: {

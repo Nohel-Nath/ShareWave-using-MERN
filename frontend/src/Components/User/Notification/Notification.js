@@ -61,7 +61,7 @@ function Notification() {
         withCredentials: true,
       };
       const response = await axios.delete(
-        `https://sharewave.vercel.app/notification/delete/${notificationId}`,
+        `https://share-wave.vercel.app/notification/delete/${notificationId}`,
         config
       );
 

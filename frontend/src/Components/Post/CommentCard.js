@@ -42,7 +42,7 @@ const CommentCard = ({
         withCredentials: true,
       };
       const response = await axios.put(
-        `https://sharewave.vercel.app/post/${postId}/comments/${commentId}`,
+        `https://share-wave.vercel.app/post/${postId}/comments/${commentId}`,
         { comment: commentUpdated },
         config
       );
@@ -63,7 +63,7 @@ const CommentCard = ({
         withCredentials: true,
       };
       const response = await axios.delete(
-        `https://sharewave.vercel.app/post/${postId}/delete/${commentId}`,
+        `https://share-wave.vercel.app/post/${postId}/delete/${commentId}`,
         config
       );
 

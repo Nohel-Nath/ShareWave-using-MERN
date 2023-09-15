@@ -30,7 +30,7 @@ function ForgetPassword() {
 
     try {
       const res = await axios.post(
-        "https://sharewave.vercel.app/user/password-forgot",
+        "https://share-wave.vercel.app/user/password-forgot",
         { email },
         {
           headers: {

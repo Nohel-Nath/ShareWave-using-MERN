@@ -25,7 +25,7 @@ function ResetPassword() {
     }
     try {
       await axios.put(
-        `https://sharewave.vercel.app/user/password-reset/${token}`,
+        `https://share-wave.vercel.app/user/password-reset/${token}`,
         {
           password: newPassword,
         }

@@ -64,7 +64,7 @@ function Account() {
   const handleDeleteAccount = async () => {
     try {
       const res = await axios.delete(
-        "https://sharewave.vercel.app/user/deleteMe",
+        "https://share-wave.vercel.app/user/deleteMe",
         {
           headers: {
             "Content-Type": "application/json",
@@ -108,7 +108,7 @@ function Account() {
   const handleUnblockUser = async (id) => {
     try {
       const response = await axios.post(
-        `https://sharewave.vercel.app/user/unblock/${id}`,
+        `https://share-wave.vercel.app/user/unblock/${id}`,
         {},
         {
           headers: {
