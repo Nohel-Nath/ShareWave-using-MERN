@@ -1,0 +1,41 @@
+.notFound {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.notFoundContainer {
+  background-color: #ebedf0;
+  height: 100%;
+  width: 50%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFoundContainer > svg {
+  font-size: 5vmax;
+  border: 1px solid black;
+}
+
+.notFoundContainer > a {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  background-color: #ebedf0;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .notFoundContainer {
+    width: 100%;
+  }
+}

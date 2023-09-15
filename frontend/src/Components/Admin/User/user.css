@@ -1,0 +1,59 @@
+.userListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#userListHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.userListTable {
+  background-color: white;
+  border: none !important;
+  text-decoration: underline;
+}
+
+.userListTable div {
+  font: 300 1vmax "Roboto";
+  border: none !important;
+}
+
+.userListTable a,
+.userListTable button {
+  transition: all 0.5s;
+}
+
+.userListTable a:hover {
+  color: black;
+}
+
+.userListTable button:hover {
+  color: black;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .userListTable div {
+    font: 300 6vw "Roboto";
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .userListTable div {
+    font: 300 4vw "Roboto";
+  }
+}

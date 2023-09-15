@@ -1,0 +1,150 @@
+.story-row {
+  margin-top: 70px;
+}
+.story-container {
+  margin-left: 230px;
+  width: 450px;
+
+  position: relative;
+  margin-top: -300px;
+}
+
+.create-story {
+  height: 300px;
+  width: 200px;
+
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-story > .create-story-content > .userImage {
+  height: 14vmax;
+  width: 13.15vmax;
+  cursor: pointer;
+  margin-top: -12px;
+  margin-left: 1px;
+}
+
+.create-story > .create-story-content > .icon {
+  font-size: 48px;
+  cursor: pointer;
+}
+.create-story:hover {
+  background-color: #ebedf0;
+}
+.create-story-content {
+  text-align: center;
+}
+
+.create-story-content > p {
+  color: black;
+  font-weight: 500;
+}
+.button-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.story-navigation {
+  align-items: center;
+}
+.previous-story-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 40;
+}
+.story-container > div > .userName {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-top: -30px;
+  margin-left: 60px;
+}
+
+.next-story-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 375px;
+}
+
+.DialogBox1 {
+  min-width: 500px;
+  height: 100vh;
+  padding: 2vmax;
+  background-color: #ebedf0;
+}
+
+@media screen and (max-width: 600px) {
+  .story-container {
+    margin-top: 50px;
+    width: 350px;
+    margin-left: -20px;
+  }
+
+  .next-story-button {
+    margin-left: 275px;
+  }
+  .create-story {
+    height: 300px;
+    width: 300px;
+  }
+  .create-story-content .img {
+    height: 20vmax;
+  }
+
+  .create-story > .create-story-content > .userImage {
+    height: 35vmax;
+    width: 50vmax;
+
+    margin-top: -5px;
+  }
+
+  .create-story > .create-story-content > .icon {
+    margin-bottom: -20px;
+    margin-right: 15px;
+  }
+  .create-story-content > p {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .story-container {
+    margin-top: 50px;
+    width: 450px;
+    margin-left: 25px;
+  }
+
+  .next-story-button {
+    margin-left: 375px;
+  }
+
+  .story-container > div > .userName {
+    margin-top: -30px;
+    margin-left: 85px;
+  }
+  .create-story {
+    height: 300px;
+    width: 350px;
+    margin-left: 70px;
+  }
+  .create-story-content .img {
+    height: 20vmax;
+  }
+
+  .create-story > .create-story-content > .userImage {
+    height: 24vmax;
+    width: 38.9vmax;
+    margin-top: -11px;
+  }
+}

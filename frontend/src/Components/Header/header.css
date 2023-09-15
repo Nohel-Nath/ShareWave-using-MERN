@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 25%;
+}
+
+.header > a {
+  width: 2vmax;
+  height: 2vmax;
+  margin-left: 4vw;
+  margin-top: 1vw;
+  margin-right: 1vw;
+}
+.header > a > svg {
+  font-size: 2vmax;
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.445);
+}
+
+.header > a > svg:hover {
+  color: black;
+  transform: scale(1.2);
+}
+.noti-icon {
+  font-size: 2vmax;
+  color: black;
+  margin-top: 1px;
+  text-decoration: none;
+}
+.notification-count {
+  margin-left: 22px;
+  color: black;
+
+  text-decoration: none;
+  margin-top: -42px;
+  text-decoration-color: black;
+  font-size: 1.2vmax;
+  text-decoration: none; /* Add some spacing between the icon and count */
+}
+
+@media screen and (max-width: 600px) {
+  .header > a {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 1.5vw;
+    margin-top: 1vw;
+  }
+  .header > a > svg {
+    font-size: 5vw;
+  }
+  .noti-icon {
+    font-size: 28px;
+    color: black;
+    margin-top: 1px;
+  }
+
+  .notification-count {
+    color: black;
+
+    margin-top: -40px;
+    margin-left: 20px;
+    font-size: 3vmax; /* Add some spacing between the icon and count */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .header > a {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+  }
+  .header > a > svg {
+    font-size: 4vw;
+  }
+  .noti-icon {
+    font-size: 29px;
+    color: black;
+    margin-top: 3px;
+  }
+
+  .notification-count {
+    color: black;
+
+    margin-top: -40px;
+    margin-left: 20px;
+
+    font-size: 2vmax; /* Add some spacing between the icon and count */
+  }
+}

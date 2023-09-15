@@ -1,0 +1,66 @@
+.newStory {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  background-color: #ebedf0;
+}
+
+.newStoryForm {
+  background-color: #ebedf0;
+  height: 70%;
+  width: 50%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.newStoryForm > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
+.newStoryForm > input[type="text"] {
+  width: 400px;
+  padding: 1vmax;
+  border-radius: 30px;
+  background-color: #ebedf0;
+  outline: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  border: 1px solid black;
+}
+
+.newStoryForm > div > input {
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+
+.newStoryForm > input[type="file"] {
+  border-radius: 30px;
+}
+
+.newStoryForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(38, 63, 173);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+
+.DialogBox1 {
+  background-color: #ebedf0;
+}

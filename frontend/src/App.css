@@ -1,0 +1,17 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+*body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body takes full viewport height */
+}
+
+.greenColor {
+  color: green !important;
+}
+.redColor {
+  color: red !important;
+}
